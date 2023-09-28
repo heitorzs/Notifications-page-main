@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+p{
+  font-weight: 500;
+}
+h1{
+  font-weight: 800;
+}
+.notifications{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.App{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  margin: 1rem;
+  
+}
+.container{
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 60%;
+  height: 100vh;
+  flex-direction: column;
+}
+.message {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+  padding: 10px;
+  gap: 2rem ;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(210, 60%, 98%);
+  position: relative;
+}
+.message::after {
+  content: ''; /* Conteúdo vazio */
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%; /* Torna-o uma bolinha */
+  position: absolute;
+  right: 10px; /* Ajuste a posição para o final da mensagem */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+}
+.read {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+  padding: 10px;
+  gap: 2rem ;
+  border-radius: 10px;
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.read::after {
+  display: none;
+}
+.message img {
+  padding: 2px;
+  height: 40px;
+  width: 40px;
+}
+.button{
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+}
+.button:hover{
+  color: hsl(219, 14%, 63%);
+}
